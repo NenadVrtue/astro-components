@@ -1,0 +1,27 @@
+/* The integration's default injected base.css file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-sans;
+  }
+
+  h1 {
+    @apply font-sans leading-headlines font-bold text-4xl lg:text-5xl;
+  }
+
+  .subheading {
+    @apply text-lg;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-dark text-white px-6 py-3  min-w-[120px] flex sm:inline-block justify-center text-center border border-dark;
+  }
+  .btn-sec {
+    @apply bg-white text-dark px-6 py-3 flex sm:inline-block min-w-[120px] justify-center text-center border border-dark;
+  }
+}
