@@ -1,9 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Hero1 from "../components/Hero/Hero1.astro";
+
 import Container from "../layouts/Container.astro";
 ---
 
 <Layout title="Vrtue Digital Astro Components with Tailwind">
-  <Container><a href="/hero" class="underline">Hero Sections</a></Container>
+  <Container>
+    <div class="my-10">
+      <a href="/hero" class="underline text-4xl">Hero Sections</a>
+    </div>
+  </Container>
 </Layout>
