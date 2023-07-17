@@ -20,6 +20,9 @@ module.exports = {
       minHeight: {
         "90vh": "90vh",
       },
+      cursor: {
+        'fancy': 'url(cursor.svg), auto',
+      }
     },
   },
   plugins: [],
