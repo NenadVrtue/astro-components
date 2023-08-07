@@ -21,8 +21,8 @@ module.exports = {
         "90vh": "90vh",
       },
       cursor: {
-        'fancy': 'url(cursor.svg), auto',
-      }
+        fancy: "url(cursor.svg), auto",
+      },
     },
   },
   plugins: [],
