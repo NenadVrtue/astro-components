@@ -1,8 +1,27 @@
 ---
-const {title} = Astro.props;
+import Container from "../../../layouts/Container.astro";
+const { title, subtitle } = Astro.props;
 ---
 
-<section>
-    <h1>{title}</h1>
-    <p>bububu</p>
+<section class="py-20 lg:py-28 relative">
+  <Container
+    classes="min-h-[80vh] flex flex-col lg:flex-row lg:items-center gap-8 xl:gap-16"
+  >
+    <div class="flex flex-col lg:w-1/2">
+      <h1 class="mb-4">{title}</h1>
+      <p class="mb-8 subheading">{subtitle}</p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="/" class="btn">Button</a>
+        <a href="/" class="btn-sec">Button2</a>
+      </div>
+    </div>
+
+    <img
+      src="/images/placeholderImage.png"
+      width="584"
+      height="640"
+      alt="placeholder"
+      class="lg:absolute top-0 right-0 w-full lg:w-1/2 h-full object-cover"
+    />
+  </Container>
 </section>
